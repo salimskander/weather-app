@@ -7,7 +7,7 @@
             v-model="city"
             @keyup.enter="searchWeather"
             class="form-control"
-            placeholder="Entrez le nom de la ville"
+            placeholder="Nom de la ville"
             aria-label="Nom de la ville"
             aria-describedby="button-addon2"
           />
