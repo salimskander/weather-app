@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <CitySearch @weather-updated="updateWeather" />
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <h1 class="text-center mb-4">Application Météo</h1>
+    <div class="w-100">
+      <CitySearch @weather-updated="updateWeather" />
+    </div>
     <WeatherDisplay :weather="weather" />
   </div>
 </template>
@@ -24,3 +27,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+</style>
